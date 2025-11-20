@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proper Higgledy Piggledy – Coming Soon</title>
+    <!-- Import craft‑inspired fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      /* Basic reset */
+      *, *::before, *::after {
+        box-sizing: border-box;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: 'Montserrat', sans-serif;
+        color: #333;
+        background-color: #fdf6ef;
+        line-height: 1.6;
+        /* Center the main card horizontally and vertically */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      /* Decorative bunting background across the whole page */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('bunting.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        opacity: 0.2; /* reduce opacity so content remains legible */
+        z-index: -1;
+      }
+      /* Main content container */
+      .container {
+        max-width: 480px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        /* Remove top margin; centering handled by flex on body */
+        position: relative;
+      }
+      /* Logo styling */
+      .logo {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 1rem;
+        display: block;
+      }
+      /* Heading and tagline */
+      h1 {
+        font-family: 'Amatic SC', cursive;
+        font-size: 2.4rem;
+        margin: 0 0 0.5rem;
+        color: #473c2f;
+        text-align: center;
+      }
+      .tagline {
+        font-family: 'Amatic SC', cursive;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #7a5a3a;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      /* Buttons */
+      .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+      .button-group a {
+        text-decoration: none;
+        color: #ffffff;
+        padding: 0.8rem 1rem;
+        font-weight: 600;
+        border-radius: 6px;
+        text-align: center;
+        transition: transform 0.1s ease, box-shadow 0.2s ease;
+      }
+      .button-group a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+      }
+      .instagram {
+        background-color: #e6678c;
+      }
+      .etsy {
+        background-color: #e97b39;
+      }
+      .vinted {
+        background-color: #4cbfa6;
+      }
+      /* Note text */
+      .note {
+        margin-top: 1.5rem;
+        font-size: 0.85rem;
+        color: #666;
+        text-align: center;
+      }
+      /* Larger screens adjustments */
+      @media (min-width: 600px) {
+        .container {
+          max-width: 640px;
+          padding: 2rem;
+        }
+        .button-group {
+          flex-direction: row;
+        }
+        .button-group a {
+          flex: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <img class="logo" src="MonogramLogo@4x.png" alt="Proper Higgledy Piggledy logo">
+      <h1>Proper Higgledy Piggledy</h1>
+      <div class="tagline">Handmade &amp; heartfelt crafts</div>
+      <div class="button-group">
+        <!-- Replace the href values with your actual profile links -->
+        <a class="instagram" href="https://instagram.com/properhiggledypiggledy" target="_blank" rel="noopener">Instagram</a>
+        <a class="etsy" href="https://www.etsy.com/shop/properhiggledypiggledy" target="_blank" rel="noopener">Etsy Shop</a>
+        <a class="vinted" href="https://www.vinted.co.uk/member/properhiggledypiggledy" target="_blank" rel="noopener">Vinted</a>
+      </div>
+      <div class="note">Stay tuned – full website coming soon!</div>
+    </main>
+  </body>
+</html>
